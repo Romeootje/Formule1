@@ -37,7 +37,7 @@ namespace F1Lib.Models
 
         public IEnumerable<Driver> Drivers { get; set; } = Enumerable.Empty<Driver>();
         public IEnumerable<Team> Teams { get; set; } = Enumerable.Empty<Team>();
-        public IEnumerable<Circuit> Circuits { get; set; } = Enumerable.Empty<Circuit>();
+        public List<Circuit> Circuits { get; set; }
     }
 
 }

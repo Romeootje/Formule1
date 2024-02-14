@@ -150,7 +150,7 @@ namespace F1MVC.Migrations
 
                     b.HasIndex("CountryCode");
 
-                    b.ToTable("Grandprixes");
+                    b.ToTable("Grandprix");
                 });
 
             modelBuilder.Entity("F1Lib.Models.Result", b =>

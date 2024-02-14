@@ -36,7 +36,7 @@ namespace F1Lib.Models
 
         public Country? Country { get; set; }
 
-        public IEnumerable<Result> Races { get; set; } = Enumerable.Empty<Result>();
+        public List<Result> Races { get; set; }
     }
 
 }

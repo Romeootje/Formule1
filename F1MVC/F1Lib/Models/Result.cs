@@ -27,7 +27,7 @@ namespace F1Lib.Models
         public string Time { get; set; } = string.Empty;
 
         public Driver Driver { get; set; }
-        public Grandprix GrandPrix { get; set; }
+        public Grandprix Grandprix { get; set; }
         public Circuit Circuit { get; set; }
         public Team Team { get; set; }
     }

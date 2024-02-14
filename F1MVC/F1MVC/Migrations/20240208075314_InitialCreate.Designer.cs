@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace F1MVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240207122127_InitialCreate")]
+    [Migration("20240208075314_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -153,7 +153,7 @@ namespace F1MVC.Migrations
 
                     b.HasIndex("CountryCode");
 
-                    b.ToTable("Grandprixes");
+                    b.ToTable("Grandprix");
                 });
 
             modelBuilder.Entity("F1Lib.Models.Result", b =>

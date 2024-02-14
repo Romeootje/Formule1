@@ -73,7 +73,7 @@ namespace F1MVC.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Grandprixes",
+                name: "Grandprix",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -85,9 +85,9 @@ namespace F1MVC.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Grandprixes", x => x.ID);
+                    table.PrimaryKey("PK_Grandprix", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Grandprixes_Countries_CountryCode",
+                        name: "FK_Grandprix_Countries_CountryCode",
                         column: x => x.CountryCode,
                         principalTable: "Countries",
                         principalColumn: "CountryCode");
@@ -146,9 +146,9 @@ namespace F1MVC.Migrations
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Results_Grandprixes_GrandPrixID",
+                        name: "FK_Results_Grandprix_GrandPrixID",
                         column: x => x.GrandPrixID,
-                        principalTable: "Grandprixes",
+                        principalTable: "Grandprix",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -170,8 +170,8 @@ namespace F1MVC.Migrations
                 column: "CountryCode");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Grandprixes_CountryCode",
-                table: "Grandprixes",
+                name: "IX_Grandprix_CountryCode",
+                table: "Grandprix",
                 column: "CountryCode");
 
             migrationBuilder.CreateIndex(
@@ -213,7 +213,7 @@ namespace F1MVC.Migrations
                 name: "Drivers");
 
             migrationBuilder.DropTable(
-                name: "Grandprixes");
+                name: "Grandprix");
 
             migrationBuilder.DropTable(
                 name: "Teams");
